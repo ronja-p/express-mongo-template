@@ -3,7 +3,7 @@ const clientError = (req, res) => {
         message: 'not a valid route'
     });
 };
-const serverError = (error, req, res, next) => {
+const serverError = (error, req, res) => {
     res.status(500).send({
         message: error.message
     });
